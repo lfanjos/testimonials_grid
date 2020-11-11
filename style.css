@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 62.5%;
+  color: white;
+}
+
+html,
+body {
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.445);
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: hsl(0, 0%, 81%);
+}
+
+p {
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.testimonials-grid {
+  display: grid;
+  height: auto;
+  width: 80vw;
+  margin: 4rem auto 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5";
+
+  gap: 2rem;
+}
+
+.testimonials-card {
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 0px 19px 2px #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.testimonials-card:nth-child(1) {
+  grid-area: card1;
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-color: hsl(263, 55%, 52%);
+  background-repeat: no-repeat;
+  background-position: 340px top;
+}
+
+.testimonials-card:nth-child(2) {
+  grid-area: card2;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.testimonials-card:nth-child(3) {
+  grid-area: card3;
+  background-color: white;
+  color: hsl(219, 29%, 14%);
+}
+
+.testimonials-card:nth-child(3) h2 {
+  width: 80%;
+}
+
+.testimonials-card:nth-child(4) {
+  grid-area: card4;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.testimonials-card:nth-child(5) {
+  grid-area: card5;
+  background-color: white;
+  color: hsl(219, 29%, 14%);
+}
+
+.testimonials-card-avatar {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.testimonials-card-avatar img {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.testimonials-card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.footer {
+  text-align: center;
+  color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  border-bottom: 1px solid #453886;
+  padding-bottom: 0.25em;
+}
+
+.footer a:active,
+.footer a:hover,
+.footer a:focus {
+  color: #ff7800;
+}
+
+.footer a:hover {
+  border-bottom: 1px dotted #453886d;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 1em;
+  border-bottom: 0;
+  padding-bottom: 0.3em;
+  text-decoration: none;
+}
